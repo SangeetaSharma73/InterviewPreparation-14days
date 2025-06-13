@@ -3,48 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sample Blog Post</title>
     <style>
-      header nav h1 {
+      body {
+        font-family: Arial, sans-serif;
+        margin: 2rem;
+        line-height: 1.6;
+      }
+      article {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      figure {
+        margin: 1rem 0;
         text-align: center;
+      }
+      figcaption {
+        font-size: 0.9rem;
+        color: #555;
+      }
+      aside {
+        background: #f4f4f4;
+        padding: 1rem;
+        margin-top: 2rem;
+        border-left: 4px solid #ccc;
       }
     </style>
   </head>
   <body>
-    <header>
-      <nav>
-        <h1>Blog Layout</h1>
-      </nav>
-    </header>
-    <section>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vel nemo
-        aperiam earum blanditiis quaerat quas, pariatur nobis magnam fugiat
-        consequatur tempore mollitia cum beatae, quisquam aliquam quia nisi
-        amet.
-      </p>
-    </section>
-    <aside>
-      <div>
+    <article>
+      <header>
+        <h1>The Beauty of Nature in Everyday Life</h1>
+        <p><em>By Jane Doe | June 13, 2025</em></p>
+      </header>
+
+      <section>
+        <h2>Introduction</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi,
-          aperiam sunt atque cumque perferendis consectetur soluta expedita
-          impedit eos neque dolorum quo, harum illo consequatur esse, laborum
-          praesentium rem minus.
+          Nature is all around us, yet often overlooked in our busy daily lives.
+          This post explores how reconnecting with natural elements can bring
+          calm and perspective.
         </p>
-      </div>
-    </aside>
-    <figure>
-      <h3>This is figure</h3>
-      <p>
-        Here para Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Impedit soluta, illum id eveniet sunt facere vel quia accusantium
-        voluptate vero natus tempora veritatis. Temporibus quia, unde magnam
-        veritatis excepturi iste!
-      </p>
-    </figure>
-    <footer>
-      <p>it is the footer</p>
-    </footer>
+      </section>
+
+      <figure>
+        <img
+          src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQA2AMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAFAAIDBAYBB//EAD8QAAIBAwMCBAQEBQMCBAcAAAECAwAEEQUSITFBEyJRYQYUcYEjMpGhQrHB0eEzUvEVJBZDs/AHcoKDoqOy/8QAGQEAAwEBAQAAAAAAAAAAAAAAAQIDAAQF/8QAJBEAAwACAgMAAgIDAAAAAAAAAAECAxEhMRIiQQRxEzIFM1H/2gAMAwEAAhEDEQA/APPNRsbiK5htpk/Fd9v5s4OQOtGLTSI7T5kanA2MbgEI9SMc454z9KZr09iJNIaFmIVstufJHIxWg1GS31Oxu8XMYl2Da2zG5ACeueT788fSuVt6QkyjCAKNFTcE3tOPqPKQecfSr1zpwsrRZoZ5XYnzHw/w2OOgPr2P3qjEWOm2/iLwLjg+nT9K9U0tNM1HSL1pr+3jsiQkECR5ZmxySOuSegGP51RG8Tz211V0sWtJ7KOSFGDNGo28jg+/+2g946bwYuI89KMa9p62mp3C2AlaKM8OVx1HP24NA5FwpXg5OQaIEuTsjmSJAUjGMAMODj3q6VVdNMwgC7327t37Y/Wq8aCTwREh38LtHJY+tF2068js2JsxHHA2Wmfdkj1we32oNhS2AwrSMuOASMn05oro13Jpd7cqSU3RvHIgOA3bH61UMQSJjvBYnPFcMeXyGYmlbHlcEjZRojG3KgE49Tz/AGqVGcArJuKtjqf61bk0z8fT0hl/Eu0XdkYCE460pt3g+GygsuV7cVJ3oFRvkq3fhJZAAqZJGG5R/CB0/lWyMTS2rIs0osoogjCNh5W255JGazF1LbvY2VvBaRiRJV3y5yZenB9BWlS8htdLns5yu+4cPGrLyq7T9scjmn2Hx0irq2kX+lSWs9yILmKZQ8pVizDdnOe/QVJfRM1qfklspId5USqoRyAvHH3o+0Gt2NpLLMkl1CqhsvH5UOM4zxyvIx9aymp3rxS3MLIsKzOXe3ixtV8Y4x0GPT1ovaEZBOIZbKSeW3drgbvEdnAU54AUdscmhPw0YhqkRmi8RUUnbgHPT1opd3d3qWnqVs3FvCgDSoo2gAfTA69aHfCTW41T/uNm0wOAGJxnHHTr3pvgEGPiyaM3YksYwSYjvcNuwQvbPcc/esjdszMCTjjj2HpWo+L7eazuSrr4CFH8OPZjAOPX271mr+NoRDkgbo89d30rTXRp7LMeqf8AZW8Bhj2pC0RyAcgnOfrQyFfElVQeTwD0otY2arph1DfBIUBJhbzc5wMgdPbNU9Ltmu77YsZKk4faD5AT1+lNvZmPWQpxIclTwc9RQxj+I7AdCaPalpVxp1zbx3qKolJVCDuBw2OtApRh2z2J6d6yNIwsXbIAH1ruD3PFNb34pm3HIphiQgdqVcAI6ilWMaLU4rmKezFxAFPibgc/mBxWrvbWSKGfxo7aNjEFCMxKjy9VPQH296A6za3RvdNaeWCOKeXCbXI2DI6jqvXii81zb2MuowWt3I8QjON7gh32+jDnB71zXV6WgyloxsZ3WFuhUFWmOBjnr0znvzXrGiXljZbLWXS0EZy0k4YOyooyQeRk5/XtXlwaJtJ06A5yLiRpCp8xHl/kM1vLTQbMQG9tJRPhN3hToQpHYdRkYJPHpTv/AKwoLav8VfD9la7LKza4gkYhiv4eDtwB+XHSvO/iO+0/Ut1xZ2q2rb1AjHU8EEmtnpfw9d6vObOT/p9tDb4eYrNvQjnA9OnfrQb450XT9LjkWwycTjBAO1QQeB/k0yZuzJWF1NaTwzQECSEhkO3OCDkUSu9bvNQuZpZfI0nLEDk+tCYgcjgc9M0fe3tn0tZU2CbjPmOT64Gcf8UtMZSCYYy4KqOtXLKzaaTw12gkZ5rkMTbcqMc+vaiFjblpix6DG5vT/wB4rnu9F5x7CMkCTppgkj2TMgBODnGQAefUAVVm0m5WR/CjLIc7n7VrbSzt725+HS4cYBWTcTztbggn6CiWsragT6bFCI8sWGGClSPTmuWslS9o6FCc6PM5dPmt2jV0KEsNp7ZqWW1uZJhKfMVHLckf8Ud1hknjsYQgTwmAJKjHXkkjr/itFDCq2WpKjr4Yt1UPGnlztY5B96tGQlePgWh/GUk1pJp2ro72yowQB/OcdASfbv7VntV062lYGztFtIx5cTyhmyehwOe4o78lBa2Ze70tCgJK3JkCsCecgD9cD/FYvWbmY3YnYyE5zE5HBI9B9far+TpHPS5Cd9p9pFo09w15It0VKiKJNu7HPQ9utY7QsjUosMgbou4ZGTRS6kmd5JnLPLJHlic4A29B/ig+mhBdjchwEYgqeScVSH6k6QQ+IVuJph81L40qqBuHP2yaD6gmxI3bHm6Y9sUauZLiSyC3V6BHjciEkn2H70EvUMYi3cggkY7UYJyT6f8ALzWvgyxyu6KSGUZwOpz6fpUGm3UllPK8LshMZGVbqeMZ9RkA4qxoV38is7ugcvEYwSOMn271UsImmuViVPEbbgI38RqiMydZnljRiGzGx/i6fbtQ5wc5xgk0cW3SNJ7eSHE6Ft5LYCnNBgS5QEc5wAKyDJCRuPPauE44pFgpIIPWl+Zsjp6UwxwcDqSfelTvYKBSrANJrokhvLEqw2lt6BCPLyKISwsbG9kYLIWDESq5AHHIx3oVqcbRX1jDc7QAQzFTnGTRO/fT4tPvVhuXkZ96gjgZxxUOktCvkCRRsYdPWUqUeZl5JOMkA8duteiXlii6dDPYXFtbFQEVUUl3Yj1LHA564rziN8LYKyllSbO0nP8AEO32re6jbyparcMSLVyfw48J5jnqM8+nIpMr5S/ZRdAvSJNWfVI4PFCgSqNrgBTzwT6/5q9/8RtTu79VW7t0R0bBkjU4Iwcc5wfY1Jc6cHtfEiLJKzhQ8s4VEXHPU8/agfxJbGysIkF1JIDKckSl0f0Iz6ZxRitrQUtAeKFjDDIoO0tjcRxnJ/tRez0u5wy7I8lclmIGBihlo5EEIJO3xuVzxg9TWkMLvF4kTjwtvmBfqM4/WkyNlZ7Luj6ZbrbwXl0yOCGBiY7ScHoDg9qiit1S6mRCRGW79f7dzWg+FUUWkR8SOQ7XYBmIxk4x36/1pmnW/wA1dagsi7QSSykjKYz6fevPqntndMposWlqok0hllIyp3ZP5OTijl1pyX0koKnerhjKxBJ7Hn9O1VLC2luvlI5RvCptQjjjNaIaPsRjGHUZ/hbFTXlXSNTUmR1zRFtvlt7FzI4B4xxxQ6/0V4rh5LVz4R4cexrR6pZussQkcsu8dTx1qnfWgh8Z4pQg2AhckZ45rTWnoz5QS+ITo5sngnnKHw1BCIAMY+h5NeYlrSKaBZRxHI2cEncvb7fv1rc6xapqwjJVgQMtLEu4DngcdcmsFq9r8sxVYyX3nzleD7V3q/NnG0Pv7+W7sntYJoRBFGQDGOWGOnPJ/brWf0GBZNWgVsAndwfYGiUKtarcFI8t4ZUsBkDPWhmjXDW2pxTIQGUMB0/2n+9XherSIthL4jsJ7aKMXEXhyBtmRzuNCddEqyRrMykBSBt4A6Z4/SiWoXMlwweZssQNvcDA/wAUI1WVZDFtZiwU7snjPtTY5rjZJPbG2yXD2bLGwWMncQf4iKitSwuGwpzg4z2qS2m2QYwD9ahgf/ugWHHcVVfTF1ovKxkcMzZJx0NU7IhJctgBY2IPo2OP51pJdQsZIgpsVBWMhWHUn+1ZhIySQVKoeuaVN0gortksTtNMKk8VKTjy00csM9PeqhOL5RilSduwA+1KsALT+F/1O1WONgmQNrD3oheTltPvinhKm4jYOo6dKFuAL+HOeCoz+tWLl/EsZgygEuwBH2qehNlRSNloCduG69e9a22hN65iluZZHZD4QjhGGbsDmseQo8AYwBgfTmtPaToogESxrL+U+vPrQudgqmi5d6de3CyRXDFPCkBI5yTjB46UC1eNkzgYi3YHmzj+1ayG+ihtl8RZAiH8QkHBPpWZ17U5L6PL7UjVvw4wMYxmpSnsbHW2V7Uf9rANpw035j+n9K1MqYtG8RSNjYGOVx/WsxE27T7NWyPxz75/f3rQiQtZ4EgXGB4aHr/elyHRL5RovhOzUi3lE20uD5MZA2kdav6HaePq19BG+4qW69WwTQXQpz8pbpM/hxRliCx6ZPX6/SivwcC2sXWGP+lIc55Irzmt0ehL0jT6Szx3FjvAAMeV/wDlya18To8TcD3NYK1nZbvSOSv4SjcfTcea01jqKyRTKzbtsjAsWH8vvVMGVY9pks0uiprsYDwJnyyyAY9eRWc+IbSe0E0yMTGVyDnNG9auEaSwdM4Mo6+oI5xVW8uIri31FkUEkA7GHtgkVz1p0PLaSA8a3SWfy8d0sYZ1UEc4J9aA/GLyIltHJLFIplcnbnJPc1fuVRLSQBCSwGG7p+lZLV3coglJYBjjBPH09K7Y0cz7JJIcWxYrGgVWBAbBPHU9qzOkxwtq8EVxl4tx37DgkAHpWptrg2sMiXVujlgxVz+YcVl9IHiatbIg8zP+vH+a6YXaItp7LGoQLIV+XLebnDHkCg94pXGe2RWrmhh8OIM5WVTt6Yxis7q0yyTdAcE9BinxkF2K2sZJdNknjeMqjDcn8Xsf2qvZ7VuNzgMQD5V5/WpbQxPayrIcMMGNQOMc5/Tj9arQvi4DZOfWqzvnZmGJUC2pLzpGwTOM9fbNDEaIICw8WRl824flHtVuMJskZQrHYeXoZD5VO3JKjPSto0ED9fpSDL0Ab704rjv70xiR2pxxwwDk0qXJGelKsAv3DgajGcEAEfSppnHyWDjJc/uf8VVuCfnlJ6HBAp7qTb7s8f5oEyHd/oHrjk80bt2SRgh8sh4G7HP0xQNwCYRjg45+9EVx7njFBgyIKKs04FuZZPCzyDwB71FrCeHZ7eCBJ1IGelS2bNNbxhgdq5yfeu/EDMLFYlZdhkXg/mbAOD+9R17Gxv2BlmSYocgEiQlR05rUWeZjGCuBnsevHSsvZEpLYnPDMxHFaVXO6MLkL4nJGankWy+9UjR2dkDBZ/JeE6ZYYJJBOf3p3wi0MlzeF225t5PynBzxVH4b1CWNtPjTG2R5jtZfQnpjvxVf4PuFa5uvFPlFs7cHr0rinHSb2dk5Nmm0u4LX+iiTo0SY75G9v7VsNPjRnvlZgQ0xOCOTx2rzjR7oR6zoCoTjbFnPr4jZr0my80mpJnnxMjPuK38eylXwBfiKWRf+kKigPvXbgdSCMGhuqwyyWd5fICpWMqUBxz3q18QTR+PoUcYYYkTg9fzLTtRxbrrbRFni8KM7e2SGzUVPsNT9UBZpW+VgabcMqCsnrj1rN6+PEHikHYzZDIeCe/Fa7ULSJ4Y2hPleMF9vI6dB96xGpyyWjrAVJj3HGe+e9dcycbrkkC4WQfNEqV/Tj1rJaaFOoQhgWG7nnGa1/j+KVEUKMSmDkgdv51joUUahGG/3jNdcfSC+hHxAVTDMQDwcUL1Bdsg54OWxRnwT4auqhlztHmH8qDakpL7j3Jx+1PBOeyO1/wBFwT0qKLiUADP/ABUtlko427h39qjt+LhDnn/FUQxeij3RsVwU55NDz+Gj7Dyp6miaPtjkz6GhTEvGRnNZCwMBwFzk4GBXOW5ximDjpgU4HHbJ/wBwNEoOOQOneu0125xSogJpzuuUzUkrnwAvQHFMnkZ5E3EYGOMU64VjApAJHGf3oCIbL1g+gq6rKh579qo7gssJxyMUTeON0MiNh+6+tBi2/hetGV44xGvXghecUviOK6jsLWZ2BtHYiIhgSD3HrUNizLt2EgEclOD0qvrEwlgttjOUG5SrAeU+3tU9cmhew60bfcaamSdobGegyTWstXkkgVWAGBsb6ZFY3TMm8twO0ZI9Bya0Ec8ovk8JnaNXB8x6nHpQqeRr5pE2hTYn0xZGICSTY9uTml8FOFnuNxA/7Nuv/wBNUNNmCR20rLkLLKBg9zmpPhCfZd3BMhA+VZfLwe37Ujjk6FWkwtaylde0Ahuqw9sf+a1epaNKJLvUQSBtcDPXBwcV5DHLt1j4fYnhRCP/ANrV6XoMu7UtYQH+NSP0NK1pj+RU+KRsn0WbH+kVLAccbh/arF2Uns9TmT/SeCPjOezVV1+RfnNKVzlHUf8A9CqtvM1vHq9u+DGYUKZ7fmrncfUV8uB8nixW0BQZjMS5AHU4FZb4isTewrMoYebhvX1rUidjDCkj8eAo4PHA9KznxBJcLZxBELRCVuQOPWqxvRzPsEjx0nSKO3ZiqkqoPTgZrO2zJLex7uG8QD963lvKJr2J0yuEbkdT5QOK8+2FLxRn/wAzgn61aRF9NBLEvgITGVcu4J55HagWpqAiKjZwxDcY7D70YgmdIhIx3BmcDJyRQbUOdp7k5P6CjPZOOyvY8bxg421yz2fOxbwQpfBwKl04EmTjOAT9qbYKG1CFTyGfGM4qo7CVqlqZJ0lWQgFtoHcY4/egJ4+3FHELQz3bKW378cKOSR0oGMBiDwMnJoQLI3FdPC0/AHQ0lXIO3HvmqDDCBtz3rtdJGOSKVYw+6UrIoPoP5U+VnCRupySMYU9a7NF4knmlVW6ANVsW7lIwDG2wcMpoCVSSKcwZpUwDgYzx0ohFhUY7SGFRfOPvw23cMD8uDVjJNtI5BAVwc9cjilZNtsltJ/l7hCyKxZSMMM4yOv1qvraoFheNiUfJGftXIjulUuPUZ9sVDqQxHbjGPw+/1oa5HX9iXSdpvotykqIugOM0etJllmixCFcyBeB+Xg8HNBPhpHuNUjROHKELiiCyFrVBJ1a4GSowe9bXIMi5IbPctquGPE8nl7HAp3w1OYr2Yrjm1YHjt5agsiDOIhtP403HceUkVz4aXxNQkUEgfKvg/QA/0pSqCRlzf6MAMECL/wBVq9E0G5EOsamHbGdgOPo1eYGVDf6So6YjBH/3Wrf6QJZda1QBVVlVWI9sHpSX8HXQ74h3vd6SwB2qVP8A+QrsjeNp2pqGIkESggHr+aorm5E9vph3ZOxT06eamICq6o7HaBGhIPfk1OSlPgm0S4+YtLdHjDS+CBnGeR9KHfEsZj0Wzkl4L3DcdOmRgirejKyzWiwybBLC2G9CFY/0FD/iicyaJbI2N8d1Jlu/ftWa09InwOtYY4NQtzkNAVPIbAUmIN/OsI77rvL4yHGeeK3Fu13MbaS3TIRQSeMDMC9f7VgpXIu/EY5IYHOODVI5bAHYmLzLEI9qbnO1FBJODQO8lYsoIAOM/mJ/WtBAso1EGEvE4kkx3x5ef51ndRJLIPKCFUYX6D/396eVyIlpjrAksSBlSpzTLGNm1G3QjO6VVwfriptAtzcXcsQk2hYnbpnp/wAU2JGguo5ZXCFZkYDPPUU31obT7CttHMbjUMqgCsMg9jtbFZp+Oa06SKbzUVPPiMmD61mrgHxGGMYOCK0dgWiMAdiB9TXF3FiBn3p20qMikpCqWDYf0qhhoGMjH60qR55PWu1jE94jx3JSQbGHPvXZjIoQ84xnBq1e2c9xOZfER93qwyBVlrdJVLzlclRjbxjFL5IStMGFS9xGhcHfjn60a+T8OE25kUqWG4g/lP0oc9o80uItqhD1z1q/CkwTMi5k/iYNj96W2LWiVLK2WRB8wCg/Oec9OKGaiuSiKfyRgMT68/3q9HgZOw7ff19qHSb5pH3kncxNZMCei38N7o74SqPyqeT0xii1rAEsY1lC+J83v/NkbRng/U0IgwoVJGO36UQstksgAYE5/KeMn60l00gutskWxkt7mWWWMRku7KfUEGh2gt8vL40xAUwugPoSK113qVvcaUbaTxG2oxGwg+wB47fWsvbrHbwooDH1L1LHl8p2yjrRTg3JfWfiZ/DaPI9AHyf516RvS0vr+5glCswCpvI9OlYmaxti5cT/AIjDhc8Ctr8OXCTIj3EtvMFTEkckIJOOnf8Aepfk5lKVFcLTbTKVp89O9pHCm9bSLlgCQo3FgCR35o9Hoc97FcQ2biYzqFeXJwrZPXj3rR2NnCFeaCCGISJhowp84PPTPvVHRbDVbe/llgVoLVjkrJGAPsP61xz+bvfiXeNfQauj21gY7eeSRpbfdHHgHDZPGf1oDqul3OqG2trSNHAmcyOh6BmJGfTqaN/+I7bTNSlutUedFZ8qQhIIxycfXv7UI+IfjnTJGWLS4pW3jDsrbM+nH6+1PGbPfUiOIX0JXQi07RdkClDFnAbkuQOMHuBXlN6m93YepIrcL8YyX0brBaxGIp4cskWWdEI5IBOe/OK5/wCHLCXTg2lyjU5XJby4BXnocnAP1q+FvDv+Xtitqv6gyK9iuollifdI45WQchsD+1Z7WstcLnbwvbitFdfC+oafNE5tGZmyDs8wBx7dKC64jSzrutxGQmABjn3rpxuXXq9ol46e2R/D0iQS3Ks2GMeU6ckdR+9duAfHeZItrnu3AH2qokEsSK6A7hydvXFXooJpnVZkkRm5y4IwPp17VRrTbM23OkdBI/GmZAzDjBANCLoKrvtYnPPNEbmLwpnVEZowcqSOcUMuiPFOBgelPOhUtEGMda6BxTm6BhwvvTcc5FOEVKmksDSo6MHTKg3MQuM8ccVWnnkYbgeAcAelW/lIooxH4qyN3Hda5NHbmLYrbVzkuB0PvUlomkkQQTOASpXJGTUouZCeSRs/TFdFvZrLuW5yPQcbqakdqWyrsUBO4np9KbSG0iws4G3Hfpj1rpuVHMkEZHoRxn61wRweOsXgOYscSopbPrVi00+SWWRYXlZhnAwcH/n3pGpQPUrizS53+FMmFHAY4P0H71PY6ZIZlTxghzklj0x60d0myE9qpIuj+JsYoqqOvPYeoH2pk1tFa3co8aVQoG55GXDAYA7c/aouvLoZTPZVudPgW2nk+bjBIIHHJORx7d6E7SFO2QMNvTHHajl7cWEkBtrdt7Ajf+KVGfUA4GaCXSqDGI5440IxlycnjnntWxJ9MN+PwfbWLXTqUk2yAgYI6g+n9qI2sF/p90JbUlCvBOOv2qGxW1ePLz/kXLKvIOPfuauDU7VLVRaCUvnO914z/Mn60t6rc6An9NZZfEkkckMdxOwXgyK/l5+vQA8VrLbUme0BedC7cod5GQc4Of1/avHJro+GZZpSrM2fOpB6/YGtFZ6vaNab9Rlf8AfhNGpQgntwMnOPsa8/L+JMLco68edNao0Wr/DGn6gPGi3vcsSDIZt5J549x+38qzF58FrHPGlvch3JIIU8t64HbpWitH0y/iA0u480efO0xO0jPX7d/pQ/VtYltF/DsreYxqQ08zlhu4/L3+/WoYsuSa8Z2NSxVyZ2LSYbMb5GjW8V8iMkqQMdz61orbTtUs0S4so7OYSoQ0kZBfrznGOOv6Vn76+1K6ZZ78W778fiIuNvfAbqRVD/AKxdQSbIzsVTu/DLELx3yx4613uMlon5456NnJK9upsL29uLVgu4yo27Bxj1PXPr2odF8PabHAqR6lFcqDlgUJOev2FZx9bmmO82qytuGSSVzx+v9KXz+5XzpbqHQb/xtpPNBY7hcPQXnl9oN3PwyY438CMFt+5WGCApz1PtwKjW3fwQt9Gyso8zqQT1OSOOfpQ23e7nBt/FuoGj/wBOPxNi7TjjI7cd/aiOmaW9wEm1C7v7WEDMMwZmBzzyc5wcUbupXtRpuW+ED72MLas1hbSxxs2w+KPO3so/WslqNu8NwqSArkA7cdu1ewRaHGHxbanKx27cPOp3juwDZ7jrXlnxVFJHrk8M0rSyR7V3EYJ4z/Wqfh/kLJTlCZceuQUpAyG/L2puQDgdKkCZRnYgjpjPQ1EMYxnn2r0iOxHI5HFKkBu9TSrA2a9NOhlnfcXyo/Nxk/tVZ7SKF7gDLBTGVDc4zSpUk9iguGITzNuJAUEDb7UZsLaGNQTGHJdR5if6UqVOE5qs80V0yiVyqRF1UngH6Vy61C5tQvhSYWVFDIRlfMuScetKlQaQEVR8Q6jeGCNpEjCuo/CQLkE96IXcaG5RMYUo7MB3I5pUqEpJmooz20SwB9vJRj19z/ami2i8Jjg7nY+YnJGPSlSo69hE+S2lvFGm8rvJOCGPHT2qwBGvy5WJPOA2MZwc9qVKo5RpJ7eyt7u/uriWMb0/28BuD1q1FFAb9l8CPoGBwSVJJzilSrmpvQQ7p+j2kjb5FZtnmAJ7iq95aQ3EEjyLyW3H69M0qVc8cxtlvgH+TglbYFMaxttXYxGABQ+4YC++VMaMvmG4jzfqKVKqY2yb7LemwxXMssAiSERoGDxDDHkDBJzxzQy8xHdCPG9c/wAZJpUqyb8xaLtvmBfFjOGwcE84xjv963EckuxvxX8pLAccEFgP2ApUq4vy0tovHRDp8UMt+peFPxYDvAyAfMK8r1yRpNUuZGJLtK2STn+Ijv7ClSq/+M/2V+g5G9IpBsRRDA85LH7HFJcESHAzjNcpV7ZBkan+WaVKlQGR/9k="
+          alt="A peaceful forest path"
+          width="100%"
+        />
+        <figcaption>A quiet forest path, perfect for reflection.</figcaption>
+      </figure>
+
+      <section>
+        <h2>Moments of Stillness</h2>
+        <p>
+          Spending time outdoors—even just a few minutes—can help reduce stress.
+          Listening to birdsong or watching the wind in the trees creates a
+          sense of stillness.
+        </p>
+      </section>
+
+      <aside>
+        <h3>Quick Tip</h3>
+        <p>
+          Try taking a short walk during your lunch break. Leave your phone
+          behind and simply observe your surroundings.
+        </p>
+      </aside>
+
+      <section>
+        <h2>Conclusion</h2>
+        <p>
+          Embracing nature doesn’t require a grand adventure. Simple,
+          intentional moments in natural settings can have a powerful impact on
+          your mental well-being.
+        </p>
+      </section>
+
+      <footer>
+        <p>
+          Thanks for reading! Share your own nature experiences in the comments
+          below.
+        </p>
+      </footer>
+    </article>
   </body>
 </html>

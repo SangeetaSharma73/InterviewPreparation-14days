@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skip to Content Link</title>
+    <style>
+      /* Hide the "Skip to Content" link by default */
+      .skip-link {
+        position: absolute;
+        top: -50px; /* Initially offscreen */
+        left: 0;
+        padding: 10px;
+        background-color: #ff0;
+        color: #000;
+        font-size: 16px;
+        text-decoration: none;
+        /* z-index: 1000; */
+      }
+
+      /* Make it visible when focused (e.g., by keyboard navigation) */
+      .skip-link:focus {
+        top: 0;
+        background-color: #0056b3;
+        color: white;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        padding-top: 40px; /* To avoid content being hidden behind the link when focused */
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      section {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Skip to Content link -->
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+
+    <header>
+      <h1>Welcome to My Accessible Website</h1>
+      <p>Navigate through the content with ease!</p>
+    </header>
+
+    <section id="main-content">
+      <h2>Main Content</h2>
+      <p>
+        This is the main section of the page. By pressing Tab on the keyboard,
+        the "Skip to Content" link becomes visible. It's an accessibility
+        feature to help users quickly navigate to the main content.
+      </p>
+    </section>
+
+    <section>
+      <h2>Additional Information</h2>
+      <p>
+        This section contains supplementary information, but the "Skip to
+        Content" link helps users quickly jump to the main content without
+        having to tab through all navigation links.
+      </p>
+    </section>
+  </body>
+</html>
