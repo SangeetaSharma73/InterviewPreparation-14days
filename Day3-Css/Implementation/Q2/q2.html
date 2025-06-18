@@ -2,32 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Flexbox Layout</title>
+    <title>Float Layout</title>
     <style>
-      .flex-container {
-        display: flex;
-        max-width: 600px;
+      .float-container {
+        width: 600px;
         margin: 20px auto;
-        gap: 20px;
       }
 
-      .flex-container img {
+      .float-image {
+        float: left;
+        margin: 0 20px 20px 0;
         width: 200px;
-        /* flex-shrink: 0; */
       }
 
-      .flex-text {
-        /* flex: 1; */
+      .text {
+        overflow: hidden; /* clears the float */
       }
     </style>
   </head>
   <body>
-    <div class="flex-container">
+    <div class="float-container">
       <img
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLDqP08-F5REzlbfPo9wnhgplga2HMAdtmJZuVVD41KjEkJuNm0H-fAu4&usqp=CAE&s"
+        class="float-image"
         alt="Placeholder"
       />
-      <div class="flex-text">
+      <div class="text">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
           risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,

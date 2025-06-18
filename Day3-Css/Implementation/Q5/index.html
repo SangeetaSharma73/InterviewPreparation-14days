@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Tooltip</title>
+    <style>
+      .tooltip {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        color: #0077cc;
+      }
+
+      /* Tooltip text */
+      .tooltip::after {
+        content: attr(data-tooltip); /* Pulls text from attribute */
+        position: absolute;
+        bottom: 125%; /* Position above the element */
+        left: 50%;
+        transform: translateX(-50%) translateY(10px);
+        background-color: #333;
+        color: #fff;
+        padding: 6px 10px;
+        border-radius: 4px;
+        white-space: nowrap;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        font-size: 14px;
+        z-index: 10;
+      }
+
+      /* Optional arrow using ::before */
+      .tooltip::before {
+        content: "";
+        position: absolute;
+        bottom: 115%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 6px solid transparent;
+        border-top-color: #333;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        z-index: 9;
+      }
+
+      /* Show tooltip on hover */
+      .tooltip:hover::after,
+      .tooltip:hover::before {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Hover over this
+      <span class="tooltip" data-tooltip="This is a tooltip!">text</span>
+      to see the tooltip.
+    </p>
+  </body>
+</html>

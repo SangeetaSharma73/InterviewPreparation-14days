@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inline-Block Layout with Custom Font</title>
+    <style>
+      /* Load the custom font using @font-face */
+      @font-face {
+        font-family: "OpenSans";
+        src: url("https://fonts.gstatic.com/s/opensans/v34/mem8YaGs126MiZpBA-UFUK0Zdc1UAw.woff2")
+          format("woff2");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      body {
+        font-family: "OpenSans", sans-serif;
+        background-color: #fafafa;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        font-size: 0; /* remove inline-block space */
+      }
+
+      .column {
+        display: inline-block;
+        vertical-align: top;
+        width: 48%;
+        font-size: 16px; /* reset font size */
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: #f2f2f2;
+        margin-right: 2%;
+      }
+
+      .column:last-child {
+        margin-right: 0;
+        background-color: #e0e0e0;
+      }
+
+      h2 {
+        font-size: 1.5em;
+        margin-top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column">
+        <h2>Column One</h2>
+        <p>
+          This is the left column using a custom font via @font-face. It
+          includes some extra content to check vertical alignment.
+        </p>
+      </div>
+      <!--
+ -->
+      <div class="column">
+        <h2>Column Two</h2>
+        <p>
+          This is the right column, also styled with Open Sans loaded using
+          @font-face.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
