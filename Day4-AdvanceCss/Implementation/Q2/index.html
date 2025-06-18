@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dark/Light Theme Switcher</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="theme-auto">
+    <header>
+      <h1>Theme Switcher Demo</h1>
+      <button id="toggle-theme">Toggle Theme</button>
+    </header>
+    <main>
+      <p>This theme adapts to your system or your manual choice.</p>
+    </main>
+
+    <script>
+      // Optional JS toggle for manual theme switching
+      const button = document.getElementById("toggle-theme");
+      const body = document.body;
+
+      button.addEventListener("click", () => {
+        if (body.classList.contains("theme-light")) {
+          body.classList.replace("theme-light", "theme-dark");
+        } else if (body.classList.contains("theme-dark")) {
+          body.classList.replace("theme-dark", "theme-light");
+        } else {
+          // Defaulting based on current scheme
+          const isDark = window.matchMedia(
+            "(prefers-color-scheme: dark)"
+          ).matches;
+          body.classList.add(isDark ? "theme-light" : "theme-dark");
+          body.classList.remove("theme-auto");
+        }
+      });
+    </script>
+  </body>
+</html>

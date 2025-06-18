@@ -1,0 +1,48 @@
+/* === Base Variables === */
+:root {
+  --bg-color: white;
+  --text-color: black;
+  --accent-color: #007bff;
+}
+
+/* === Dark Theme Variables === */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --accent-color: #66ccff;
+  }
+}
+
+/* === Theme Class Overrides === */
+body.theme-dark {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --accent-color: #66ccff;
+}
+
+body.theme-light {
+  --bg-color: white;
+  --text-color: black;
+  --accent-color: #007bff;
+}
+
+/* === Apply Styles === */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 2rem;
+}
+
+button {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+}
