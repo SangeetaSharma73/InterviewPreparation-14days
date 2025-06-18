@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Throttle Example</title>
+    <style>
+      body {
+        height: 3000px; /* So you can scroll */
+        font-family: sans-serif;
+      }
+      #output {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        background: #fff;
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="output">Scroll Position: 0</div>
+
+    <script>
+      // Throttle function
+      function throttle(fn, limit) {
+        let lastCall = 0;
+        return function (...args) {
+          const now = Date.now();
+          if (now - lastCall >= limit) {
+            lastCall = now;
+            fn.apply(this, args);
+          }
+        };
+      }
+
+      // Example: Update scroll position
+      function handleScroll() {
+        document.getElementById("output").innerText =
+          "Scroll Position: " + window.scrollY.toFixed(0);
+      }
+
+      // Throttled scroll handler
+      window.addEventListener("scroll", throttle(handleScroll, 500));
+    </script>
+  </body>
+</html>

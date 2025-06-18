@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tab Switcher</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 2rem;
+      }
+
+      .tabs {
+        display: flex;
+        border-bottom: 2px solid #ccc;
+        margin-bottom: 1rem;
+      }
+
+      .tab {
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border: none;
+        background: none;
+        outline: none;
+        font-size: 1rem;
+      }
+
+      .tab.active {
+        border-bottom: 2px solid #007bff;
+        color: #007bff;
+        font-weight: bold;
+      }
+
+      .tab-content {
+        display: none;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-top: none;
+      }
+
+      .tab-content.active {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tabs">
+      <button class="tab active" data-tab="1">Tab 1</button>
+      <button class="tab" data-tab="2">Tab 2</button>
+      <button class="tab" data-tab="3">Tab 3</button>
+    </div>
+
+    <div class="tab-content active" data-content="1">
+      <h3>Tab 1 Content</h3>
+      <p>This is the content of tab 1.</p>
+    </div>
+    <div class="tab-content" data-content="2">
+      <h3>Tab 2 Content</h3>
+      <p>This is the content of tab 2.</p>
+    </div>
+    <div class="tab-content" data-content="3">
+      <h3>Tab 3 Content</h3>
+      <p>This is the content of tab 3.</p>
+    </div>
+
+    <script>
+      const tabs = document.querySelectorAll(".tab");
+      const contents = document.querySelectorAll(".tab-content");
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          const target = tab.getAttribute("data-tab");
+
+          // Remove active class from all tabs and contents
+          tabs.forEach((t) => t.classList.remove("active"));
+          contents.forEach((c) => c.classList.remove("active"));
+
+          // Add active class to clicked tab and matching content
+          tab.classList.add("active");
+          document
+            .querySelector(`.tab-content[data-content="${target}"]`)
+            .classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>

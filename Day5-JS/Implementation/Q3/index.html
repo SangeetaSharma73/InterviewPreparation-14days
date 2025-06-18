@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Even Item Highlighter</title>
+    <style>
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .even {
+        background-color: #f0f8ff;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="myList">
+      <li>Item 0</li>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ul>
+
+    <script>
+      const listItems = document.querySelectorAll("#myList li");
+
+      listItems.forEach((item, index) => {
+        if (index % 2 === 0) {
+          // even index
+          item.classList.add("even");
+        }
+      });
+    </script>
+  </body>
+</html>
