@@ -1,0 +1,54 @@
+🧩 Topic: HTML Security Best Practices — target="_blank" and rel="noopener noreferrer"
+🔹 D – Definition
+In HTML, when you use:
+
+
+<a href="https://example.com" target="_blank">Visit Example</a>
+You're telling the browser to open the link in a new tab or window. However, this behavior introduces a security risk:
+
+The newly opened tab can access the window.opener object, which refers back to the original page.
+
+This allows the new site to manipulate the original window, potentially performing a phishing attack (e.g., replacing the login form).
+
+✅ To prevent this, always pair target="_blank" with:
+
+
+rel="noopener noreferrer"
+🔹 U – Use Cases
+🔗 Opening external links in a new tab (to avoid losing user flow)
+
+🔐 Preventing window.opener vulnerabilities
+
+🌐 Linking to untrusted or 3rd-party websites
+
+Example:
+
+
+<a href="https://external-site.com" target="_blank" rel="noopener noreferrer">
+  External Resource
+</a>
+🔹 B – Benefits
+Practice	Benefit
+rel="noopener"	Blocks access to window.opener; prevents tab hijacking
+rel="noreferrer"	Prevents sending the Referer header (extra privacy)
+Sanitizing user input in HTML	Prevents injection attacks (XSS, JS-in-HTML)
+Using Content Security Policy	Controls allowed sources for scripts, images, styles, etc.
+Avoiding inline JavaScript	Reduces risk of XSS by separating HTML from JS
+
+🔹 X – Extra Info / Pro Tips
+noopener alone is enough in most cases, but noreferrer adds extra privacy.
+
+Some older browsers don’t support noopener, so pairing both is safer.
+
+If you're working with user-generated links, always sanitize and escape input.
+
+Avoid javascript: URLs in <a href=""> as they are highly vulnerable.
+
+✅ Additional HTML Security Best Practices
+Best Practice	Why It Matters
+Validate and sanitize inputs	Prevents HTML/JS injection (XSS)
+Avoid inline event handlers	Keeps behavior and content separate
+Use HTTPS for all resources	Prevents man-in-the-middle attacks
+Implement CSP headers	Restricts scripts/styles to trusted sources
+Use autocomplete="off" for sensitive fields	Avoids credential leaks from auto-fill
+

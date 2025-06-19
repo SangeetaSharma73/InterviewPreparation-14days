@@ -1,0 +1,59 @@
+
+
+🧩 Topic: Block-Level vs. Inline Elements in HTML
+🔹 D – Definition
+Block-level elements start on a new line and take up the full width available by default.
+
+Inline elements appear within a line of text, occupying only as much width as needed.
+
+This difference affects how elements are laid out on the page without additional CSS.
+
+🔹 U – Use Cases
+✅ Block-Level Elements:
+Used to define larger page sections or containers:
+
+Content wrappers
+
+Paragraphs and headings
+
+Divisions of layout
+
+✅ Inline Elements:
+Used to define small parts of content within a line:
+
+Styling or linking parts of text
+
+Adding emphasis
+
+Embedding media in text flows
+
+🔹 B – Benefits
+Block-Level Elements	Inline Elements
+✅ Clear layout flow	✅ Seamless within text
+✅ Good for structural elements	✅ Great for emphasis or linking
+✅ Easier to style with margin/padding	✅ Minimal disruption to flow
+
+🔹 X – Extra Info / Tips
+CSS can override default behavior: use display: inline, display: block, or inline-block to change layout type.
+
+Inline elements cannot contain block-level elements.
+
+Use block elements for layout, and inline elements for text styling and interaction.
+
+✅ Examples
+🔸 Block-Level Elements (default: display: block)
+
+<div>Division</div>
+<p>Paragraph</p>
+<h1>Heading</h1>
+🔸 Inline Elements (default: display: inline)
+
+<span>Span Text</span>
+<a href="#">Link</a>
+<strong>Bold Text</strong>
+🧠 Visual Behavior (No CSS):
+
+<p>This is a <strong>bold</strong> word inside a <span>span</span>.</p>
+<div>This will break onto a new line.</div>
+<p>So will this paragraph.</p>
+Output: Inline elements stay on the same line, block-level ones start a new line.

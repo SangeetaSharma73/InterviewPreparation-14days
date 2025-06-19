@@ -1,0 +1,35 @@
+🧩 Topic: Commonly Used HTML Tags
+🔹 D – Definition
+HTML tags are predefined keywords in HTML that define the structure and type of content on a webpage. They tell the browser how to display and interpret different parts of a web document.
+
+🔹 U – Use Cases
+Here are some commonly used HTML tags and what they're used for:
+
+Tag	Purpose
+<h1>–<h6>	Define headings (from largest to smallest)
+<p>	Define a paragraph of text
+<a>	Create a hyperlink
+<img>	Embed an image
+<div>	Create a container for layout/content
+<span>	Inline container for styling text
+<ul> / <ol> / <li>	Create lists (unordered/ordered)
+<form>, <input>, <button>	Build forms and inputs
+<br>	Line break
+<strong>, <em>	Add semantic emphasis (bold/italic)
+
+🔹 B – Benefits
+✅ Helps structure content semantically
+
+✅ Makes the page accessible and easier to style
+
+✅ Enables search engines to understand the page
+
+✅ Enhances readability for both users and developers
+
+🔹 X – Extra Info / Tips
+Some tags are block-level (<div>, <p>, <h1>) while others are inline (<span>, <a>)
+
+Tags like <img>, <br>, and <hr> are void elements — they don’t require a closing tag
+
+HTML5 introduced semantic tags like <article>, <section>, <nav>, and <footer> for better structure
+

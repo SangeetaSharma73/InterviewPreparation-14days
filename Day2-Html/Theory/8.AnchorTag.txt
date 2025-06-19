@@ -1,0 +1,51 @@
+🧩 Topic: Purpose of the <a> Tag & Creating Links
+🔹 D – Definition
+The <a> tag stands for “anchor” and is used to create hyperlinks in HTML. These links can point to:
+
+External websites
+
+Internal pages
+
+Sections within the same page
+
+Email addresses or phone numbers
+
+Syntax:
+
+
+<a href="https://example.com">Visit Example</a>
+🔹 U – Use Cases
+🔸 Linking to external resources (e.g., blogs, services)
+
+🔸 Navigating between pages of the same site (e.g., Home → About)
+
+🔸 Creating in-page jump links (e.g., #section-id)
+
+🔸 Linking to documents (PDFs, DOCs, etc.)
+
+🔸 Email or phone links (mailto:, tel:)
+
+🔹 B – Benefits
+✅ Enables website navigation
+
+✅ Essential for SEO indexing and crawling
+
+✅ Supports user interactivity (buttons, menus, etc.)
+
+✅ Can open links in new tabs with target="_blank"
+
+✅ Works with keyboard shortcuts and screen readers
+
+🔹 X – Extra Info / Tips
+Use the href attribute to specify the link target
+
+Use target="_blank" to open the link in a new tab (don’t forget rel="noopener noreferrer" for security)
+
+For page jumps, use id attributes:
+
+
+<a href="#contact">Go to Contact</a>
+...
+<section id="contact">Contact Us</section>
+Can be styled to look like buttons with CSS
+

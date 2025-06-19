@@ -1,0 +1,63 @@
+🧩 Topic: Key <meta> Tags in HTML — charset, viewport, description
+🔹 D – Definition
+<meta> tags provide metadata—information about the HTML document, not shown on the page, but used by browsers, search engines, and devices.
+
+Three commonly used <meta> tags:
+
+charset – Declares the character encoding.
+
+viewport – Controls how the page scales on mobile devices.
+
+description – Provides a short summary of the page for search engines.
+
+🔹 U – Use Cases
+✅ charset
+
+<meta charset="UTF-8">
+Ensures text displays correctly (especially non-English characters).
+
+Prevents encoding errors like � or broken symbols.
+
+Use UTF-8 universally unless you have a specific legacy requirement.
+
+✅ viewport
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+Makes your page responsive on different screen sizes.
+
+Prevents mobile browsers from defaulting to a zoomed-out view.
+
+Essential for mobile-first design.
+
+✅ description
+
+<meta name="description" content="Learn modern web development with hands-on tutorials.">
+Provides a snippet shown in search engine results.
+
+Encourages users to click through (affects CTR).
+
+Should be concise (around 150–160 characters) and keyword-rich.
+
+🔹 B – Benefits
+Meta Tag	Benefits
+charset	✅ Correct text rendering, ✅ Prevents encoding bugs
+viewport	✅ Responsive layout, ✅ Better UX on phones/tablets
+description	✅ Boosts SEO visibility, ✅ Attracts more users to click your link
+
+🔹 X – Extra Info / Tips
+Always place <meta> tags inside the <head>.
+
+Keep only one charset tag, and place it as the first <meta> tag.
+
+Avoid keyword stuffing in the description meta tag—focus on clarity.
+
+For SEO, search engines may rewrite your meta description, but a good one still helps.
+
+✅ Example: Minimal SEO-Friendly <head> Setup
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A beginner-friendly guide to building responsive websites.">
+  <title>Responsive Web Design Guide</title>
+</head>

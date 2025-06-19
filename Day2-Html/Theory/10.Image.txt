@@ -1,0 +1,47 @@
+🧩 Topic: How to Add an Image in HTML (<img> Tag)
+🔹 D – Definition
+The <img> tag in HTML is used to embed an image in a webpage. It is a void element, meaning it does not need a closing tag. Instead, it uses attributes like src and alt to define the image source and description.
+
+Basic Syntax:
+
+
+<img src="image.jpg" alt="A description of the image">
+🔹 U – Use Cases
+🔸 Displaying product or profile images
+
+🔸 Embedding logos or icons
+
+🔸 Adding visual content to articles or blogs
+
+🔸 Using background graphics or illustrations
+
+🔸 Responsive images using srcset and sizes
+
+🔹 B – Benefits
+✅ Visually enhances user experience
+
+✅ Supports branding and UI clarity
+
+✅ Improves SEO and accessibility with alt text
+
+✅ Loads from local or external sources
+
+✅ Can be styled and resized via CSS
+
+🔹 X – Extra Info / Tips
+Always include the alt attribute — it's used by screen readers and shown if the image fails to load.
+
+Common attributes:
+
+src: Path to image file (can be relative or absolute)
+
+alt: Textual description of the image
+
+width, height: Control image size (can also use CSS)
+
+Example with additional attributes:
+
+
+<img src="logo.png" alt="Company Logo" width="150" height="100">
+Use loading="lazy" to improve performance on image-heavy pages.
+

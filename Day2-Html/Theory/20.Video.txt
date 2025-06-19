@@ -1,0 +1,67 @@
+🧩 Topic: HTML5 <video> Element and Its Attributes
+🔹 D – Definition
+The <video> element allows you to embed video content directly into a web page without third-party plugins. It supports a range of attributes for playback control and accessibility.
+
+Basic usage:
+
+
+<video src="movie.mp4" controls></video>
+You can also use multiple <source> tags and <track> for captions:
+
+
+<video controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.webm" type="video/webm">
+  <track src="captions.vtt" kind="subtitles" srclang="en" label="English">
+  Your browser does not support the video tag.
+</video>
+🔹 U – Use Cases
+🎬 Embedding product demos, tutorials, or background videos
+
+🧑‍🏫 Hosting educational or training content
+
+🧏 Adding accessible captions or transcripts with <track>
+
+🔁 Creating looping visuals (e.g., hero sections, animated banners)
+
+🔹 B – Benefits
+Feature	Benefit
+✅ Built-in UI	Easy control with controls (play/pause, volume, etc.)
+✅ No plugins	Native playback—no need for Flash or third-party media players
+✅ Responsive	Easily styled with CSS for all devices
+✅ Accessible	Supports track for subtitles or descriptions
+
+🔹 X – Extra Info / Attributes Table
+Attribute	Description
+controls	Displays built-in browser controls
+autoplay	Starts playing the video automatically (requires muted for autoplay to work on most browsers)
+muted	Mutes the video—often paired with autoplay
+loop	Restarts the video after it ends
+poster	Image displayed before the video plays
+preload	Hints to the browser how much of the video to preload (auto, metadata, none)
+<source>	Used to define multiple file formats for browser compatibility
+<track>	Adds subtitles, captions, or descriptions (e.g., for accessibility)
+
+✅ Example with All Key Attributes
+
+<video width="640" height="360" controls autoplay muted loop poster="preview.jpg">
+  <source src="video.mp4" type="video/mp4">
+  <source src="video.webm" type="video/webm">
+  <track src="captions.vtt" kind="subtitles" srclang="en" label="English">
+  Your browser does not support the video tag.
+</video>
+🧠 What is <track>?
+The <track> element adds text tracks for media:
+
+kind: subtitles, captions, descriptions, chapters, or metadata
+
+srclang: Language code (e.g., en, es)
+
+label: Human-readable label in the subtitle menu
+
+🔊 Captions vs. Subtitles:
+
+Captions = Dialogue + Sound descriptions (for deaf users)
+
+Subtitles = Only spoken content (for translation)
+

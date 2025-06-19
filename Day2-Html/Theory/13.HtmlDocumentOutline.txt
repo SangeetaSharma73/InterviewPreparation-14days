@@ -1,0 +1,51 @@
+🧩 Topic: HTML Document Outline Algorithm & Heading Structure
+🔹 D – Definition
+The HTML document outline algorithm determines how the content of a web page is logically structured using headings (<h1> to <h6>) and sectioning elements (like <section>, <article>, <nav>, etc.).
+
+Each heading tag defines the start of a new content section or subsection, which creates a hierarchical tree (outline) that:
+
+Organizes content for users
+
+Helps browsers and screen readers interpret structure
+
+Guides search engines in understanding topic importance
+
+🔹 U – Use Cases
+🔸 Structuring content into logical sections (e.g., Introduction → Services → Contact)
+
+🔸 Making documents accessible to screen reader users via heading navigation
+
+🔸 Providing SEO clues to search engines about what each section is about
+
+🔸 Powering skip links and outline viewers in browsers/dev tools
+
+Example:
+
+
+<h1>Blog</h1>
+  <h2>Latest Posts</h2>
+    <h3>Post Title</h3>
+  <h2>Categories</h2>
+🔹 B – Benefits
+✅ Accessibility: Screen readers use headings to allow users to navigate quickly between sections.
+
+✅ SEO: Search engines prioritize <h1> and <h2> content when indexing and ranking pages.
+
+✅ Maintainability: Logical hierarchy helps developers and users understand document flow.
+
+✅ Best Practices: Encourages clean markup and separation of content by importance.
+
+🔹 X – Extra Info / Tips
+Use only one <h1> per page for the main title (HTML5 allows multiple in different sections, but one is best for SEO).
+
+Do not skip levels (e.g., avoid jumping from <h1> to <h4>).
+
+Combine headings with semantic sectioning elements like <section>, <article>, <nav>, and <aside> for stronger outlines.
+
+HTML5 originally had a more complex outline algorithm, but most browsers don’t implement it fully. So, follow manual visual hierarchy with heading levels for best results.
+
+✅ Quick Summary Table
+Tag	Purpose	Use Within
+<h1>	Main document or section title	<body>, <article>
+<h2>	Subsections under <h1>	Nested content
+<h3>–<h6>	Deeper nesting of topics	Subtopics

@@ -1,0 +1,73 @@
+🧩 Topic: The <picture> Element with srcset and sizes
+🔹 D – Definition
+The <picture> element allows developers to define multiple image sources for different screen sizes, resolutions, or media types. It works in tandem with:
+
+<source>: Defines image variations (with media, srcset, and optionally sizes)
+
+srcset: Lists multiple image URLs with resolution or width descriptors
+
+sizes: Tells the browser how much space (in CSS pixels) the image will occupy
+
+Together, they allow the browser to choose the most appropriate image based on device and viewport.
+
+🔹 U – Use Cases
+🔸 Serving high-DPI (Retina) images for sharp rendering
+
+🔸 Delivering smaller images to save bandwidth on mobile
+
+🔸 Changing image aspect ratio or layout for different screen widths
+
+🔸 Using art direction: totally different image crops per device
+
+🔹 B – Benefits
+✅ Optimizes performance by avoiding unnecessarily large images
+
+✅ Enhances visual quality on high-resolution displays
+
+✅ Improves SEO and UX with faster load times
+
+✅ Gives developers fine control over responsive design and layout
+
+🔹 X – Extra Info / Tips
+Browsers evaluate media conditions top-down and pick the first match.
+
+If no <source> matches, the <img> fallback is used.
+
+srcset can be used alone in <img>, or inside <source> for <picture>.
+
+Use the type attribute for switching between formats (e.g., WebP, AVIF).
+
+✅ Example: <picture> with srcset and sizes
+
+<picture>
+  <source 
+    media="(min-width: 800px)" 
+    srcset="images/large.jpg" 
+    type="image/jpeg"
+  >
+  <source 
+    media="(min-width: 480px)" 
+    srcset="images/medium.jpg"
+  >
+  <img 
+    src="images/small.jpg" 
+    srcset="images/small.jpg 1x, images/small@2x.jpg 2x" 
+    sizes="(max-width: 600px) 100vw, 50vw" 
+    alt="Responsive example image"
+  >
+</picture>
+🧠 How the Browser Selects an Image
+Checks each <source> in order.
+
+Evaluates media conditions (e.g., screen width).
+
+Picks the first valid match.
+
+If none match, falls back to <img> tag.
+
+In the selected srcset, browser chooses the best resolution based on:
+
+Device pixel density (e.g., 2x for Retina screens)
+
+Declared CSS layout size from sizes
+

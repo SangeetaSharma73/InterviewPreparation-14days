@@ -1,0 +1,48 @@
+🧩 Topic: <figure> and <figcaption> in HTML
+🔹 D – Definition
+<figure>: A semantic container for self-contained content—commonly images, diagrams, illustrations, or code snippets.
+
+<figcaption>: A child tag inside <figure> that provides a caption or description.
+
+Together, they associate content with an explanation or label in a semantic and accessible way.
+
+
+<figure>
+  <img src="mountain.jpg" alt="Snowy mountain at sunset">
+  <figcaption>Mount Fuji at sunset, Japan.</figcaption>
+</figure>
+🔹 U – Use Cases
+🖼️ Describing images in articles or documentation
+
+📊 Adding context to charts, diagrams, or graphs
+
+📜 Explaining code examples or formulas
+
+✍️ Credit attribution for artwork or photography
+
+🔹 B – Benefits
+Feature	Benefit
+✅ Semantic grouping	Clearly associates content with its caption
+✅ Accessibility	Screen readers can interpret caption as part of the figure
+✅ SEO-friendly	Improves content clarity for search engines
+✅ Flexible placement	Caption can go before or after the main content
+
+🔹 X – Extra Info / Tips
+<figcaption> must be the first or last child of <figure>—avoid placing it in the middle.
+
+It supports inline or block-level content inside the caption.
+
+<figure> is optional when only one image is used, but it improves structure when captions are needed.
+
+Can also wrap media other than images (e.g., <video>, <audio>, <pre> for code).
+
+✅ Visual Example
+
+<figure>
+  <blockquote>
+    “The only limit to our realization of tomorrow is our doubts of today.”
+  </blockquote>
+  <figcaption>— Franklin D. Roosevelt</figcaption>
+</figure>
+✅ Screen readers and browsers now understand this is a quote + author, not just two random elements.
+

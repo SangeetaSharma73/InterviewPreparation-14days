@@ -1,0 +1,39 @@
+What is the purpose of the alt attribute in the <img> tag?\
+
+:
+
+🧩 Topic: Purpose of the alt Attribute in <img>
+🔹 D – Definition
+The alt attribute (short for alternative text) in the <img> tag provides a text description of the image. This text is shown when the image cannot be displayed and is also used by screen readers to make web content accessible to visually impaired users.
+
+
+<img src="dog.jpg" alt="Golden retriever playing with a ball">
+🔹 U – Use Cases
+🔸 When an image fails to load (due to a broken URL or slow connection)
+
+🔸 To describe images to users with disabilities (via screen readers)
+
+🔸 For SEO — search engines index alt text
+
+🔸 For meaningful images (e.g., product photos, infographics)
+
+🔹 B – Benefits
+✅ Improves accessibility (WCAG compliance)
+
+✅ Ensures content is still understandable without images
+
+✅ Provides context to search engines, enhancing SEO
+
+✅ Enhances user experience in text-based browsers or limited bandwidth
+
+🔹 X – Extra Info / Tips
+Avoid using "image of..." or "picture of..." — screen readers already know it's an image.
+
+Use empty alt text (alt="") for purely decorative images — this tells screen readers to ignore it.
+
+Don’t stuff keywords — keep alt text meaningful and descriptive.
+
+Example with decorative image:
+
+
+<img src="divider.png" alt="">

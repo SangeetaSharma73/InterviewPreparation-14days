@@ -1,0 +1,57 @@
+# 🧩 Topic: Purpose of <head> and <body> Tags in HTML
+## 🔹 D – Definition
+The **<head>** and <body> tags are core structural elements in every HTML document.
+<head> contains metadata and settings not visible directly on the page.
+<body> contains the visible content that appears in the browser window.
+
+<html>
+  <head> <!-- Metadata, links, scripts --> </head>
+  <body> <!-- Visible content --> </body>
+</html>
+--------------------------------------------------------------
+## 🔹 U – Use Cases
+✅ <head>:
+Linking stylesheets: <link rel="stylesheet" href="styles.css">
+
+Declaring title: <title>My Website</title>
+
+Adding meta info: <meta charset="UTF-8">, <meta name="viewport">
+
+Loading scripts (non-UI): <script src="main.js">
+
+SEO & social preview metadata
+
+✅ <body>:
+Displaying all page content:
+
+Text (<h1>, <p>)
+
+Media (<img>, <video>)
+
+Layout containers (<div>, <section>)
+
+Forms and buttons (<form>, <input>, <button>)
+------------------------------------------------------------------------------
+## 🔹 B – Benefits
+<head>	<body>
+✅ Improves performance by preloading styles/scripts	✅ Displays interactive content
+✅ Supports SEO and accessibility	✅ Renders content users can interact with
+✅ Helps define character encoding, responsive layout	✅ Essential for all UI/UX elements
+------------------------------------------------------------------------------------
+## 🔹 X – Extra Info / Tips
+The <head> tag does not render any visible content.
+
+Scripts in <head> can block rendering unless marked defer or async.
+
+Always declare <meta charset="UTF-8"> first in <head> for proper text encoding.
+
+The <body> tag should contain everything the user interacts with.
+
+
+
+
+
+
+
+
+

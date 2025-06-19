@@ -1,0 +1,63 @@
+🧩 Topic: ARIA Roles, States, and Properties
+🔹 D – Definition
+ARIA (Accessible Rich Internet Applications) is a set of attributes that enhance accessibility for users with assistive technologies by providing semantic meaning to custom or non-standard UI elements.
+
+Roles define what a UI element is (e.g., button, alert, slider).
+
+States describe the current condition of an element (e.g., expanded, disabled).
+
+Properties give additional metadata (e.g., labels, relationships).
+
+🔹 U – Use Cases
+🔸 Making custom components (modals, tabs, sliders) accessible when native HTML elements are not used
+
+🔸 Conveying dynamic content changes (e.g., collapsible panels)
+
+🔸 Supporting screen reader navigation and interpretation
+
+🔸 Indicating interactive behaviors (expanded/collapsed, selected/unselected)
+
+🔹 B – Benefits
+✅ Enhances accessibility for screen reader users
+
+✅ Improves keyboard navigation and interaction
+
+✅ Bridges the gap when semantic HTML is insufficient
+
+✅ Helps create inclusive UI components in frameworks like React, Vue, etc.
+
+🔹 X – Extra Info / Tips
+Use native HTML whenever possible before resorting to ARIA.
+
+Ensure state and role values are dynamically updated with JS when interactions change.
+
+Use the WAI-ARIA Authoring Practices Guide (APG) for patterns and examples.
+
+✅ Example: Custom Expand/Collapse Panel (Accordion)
+
+<div role="button" aria-expanded="false" aria-controls="panel1" tabindex="0" id="toggleBtn">
+  Show Details
+</div>
+
+<div id="panel1" role="region" aria-labelledby="toggleBtn" hidden>
+  <p>Here are the details...</p>
+</div>
+JavaScript for toggling:
+
+const btn = document.getElementById('toggleBtn');
+const panel = document.getElementById('panel1');
+
+btn.addEventListener('click', () => {
+  const expanded = btn.getAttribute('aria-expanded') === 'true';
+  btn.setAttribute('aria-expanded', String(!expanded));
+  panel.hidden = expanded;
+});
+In this example:
+role="button" tells assistive tech it’s an interactive button.
+
+aria-expanded reflects the current state (open or closed).
+
+aria-controls connects the button to the region it toggles.
+
+role="region" defines a landmark area of related content.
+

@@ -1,0 +1,45 @@
+🧩 Topic: Heading Tags (<h1> to <h6>)
+🔹 D – Definition
+Heading tags in HTML (<h1> to <h6>) are used to define headings in a web page. They indicate the importance and hierarchy of content, where:
+
+<h1> is the most important (usually the main title)
+
+<h6> is the least important (used for minor subheadings)
+
+Each level of heading helps browsers and search engines understand the structure of content.
+
+🔹 U – Use Cases
+🔸 <h1>: Page or section main title
+
+🔸 <h2>: Major subsections under <h1>
+
+🔸 <h3>–<h6>: Further nested headings for organization
+
+🔸 Structuring blogs, articles, or documentation
+
+🔸 Supporting screen readers and improving accessibility
+
+🔹 B – Benefits
+✅ Enhances semantic structure of the webpage
+
+✅ Boosts SEO (search engines prioritize headings)
+
+✅ Makes content more scannable for users
+
+✅ Supports accessibility tools (screen readers use headings for navigation)
+
+✅ Helps developers and users understand content hierarchy
+
+🔹 X – Extra Info / Tips
+Use only one <h1> per page (preferably at the top as the main heading)
+
+Do not skip heading levels (e.g., don’t jump from <h1> to <h4>)
+
+Headings are block-level elements and render on a new line
+
+Can be styled with CSS for font size, color, spacing, etc.
+
+
+<h1>Welcome to My Site</h1>
+<h2>About Us</h2>
+<h3>Our Mission</h3>
