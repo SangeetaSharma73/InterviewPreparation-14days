@@ -10,12 +10,12 @@ A branch is a separate version of the codebase that allows isolated work.
 
 ## 👥 Benefits of Feature Branches
 
-| Benefit           | Description                                          |
-|------------------|------------------------------------------------------|
-| Isolation         | Work on a feature independently                     |
-| Collaboration     | Multiple people can work without conflict           |
-| Code Review       | Use pull requests to review before merging          |
-| Safe Testing      | Experiment without touching production              |
+| Benefit       | Description                                |
+| ------------- | ------------------------------------------ |
+| Isolation     | Work on a feature independently            |
+| Collaboration | Multiple people can work without conflict  |
+| Code Review   | Use pull requests to review before merging |
+| Safe Testing  | Experiment without touching production     |
 
 ## 🧬 Visual Branch Flow
 
@@ -29,5 +29,6 @@ main
 ```
 
 ## 📚 Resources
+
 - [Git Branching Docs](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
 - [Learn Git Branching (Interactive)](https://learngitbranching.js.org/)

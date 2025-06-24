@@ -33,8 +33,8 @@ Layout containers (<div>, <section>)
 Forms and buttons (<form>, <input>, <button>)
 ------------------------------------------------------------------------------
 ## 🔹 B – Benefits
-<head>	<body>
-✅ Improves performance by preloading styles/scripts	✅ Displays interactive content
+<head>	                                                    <body>
+✅ Improves performance by preloading styles/scripts	    ✅ Displays interactive content
 ✅ Supports SEO and accessibility	✅ Renders content users can interact with
 ✅ Helps define character encoding, responsive layout	✅ Essential for all UI/UX elements
 ------------------------------------------------------------------------------------
