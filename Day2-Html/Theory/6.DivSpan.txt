@@ -10,6 +10,7 @@
 
 <!-- <span> Example -->
 <p>This is <span style="color:red">inline text</span>.</p>
+
 🔹 U – Use Cases
 ✅ <div>:
 Wrapping entire sections or containers

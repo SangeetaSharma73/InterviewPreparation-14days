@@ -11,9 +11,9 @@ Sections within the same page
 Email addresses or phone numbers
 
 Syntax:
-
-
 <a href="https://example.com">Visit Example</a>
+
+
 🔹 U – Use Cases
 🔸 Linking to external resources (e.g., blogs, services)
 
